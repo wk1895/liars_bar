@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骗子酒馆 - 俄罗斯轮盘</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 默认界面 -->
+    <div id="default-screen" class="screen active">
+        <div class="card">
+            <div class="counter" id="shot-count">0 / 6</div>
+            <div class="btn-group">
+                <button id="shoot-btn" class="btn shoot-btn">开枪</button>
+                <button id="reset-btn" class="btn reset-btn">重置</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 过渡界面 -->
+    <div id="transition-screen" class="screen">
+        <div class="blur-overlay"></div>
+    </div>
+
+    <!-- 结算界面 -->
+    <div id="death-screen" class="screen">
+        <div class="blood-splatter"></div>
+        <div class="death-content">
+            <div class="hint-text">酒馆的故事还没结束，等着我卷土重来</div>
+            <button id="reset-death-btn" class="btn reset-btn">再来！</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
